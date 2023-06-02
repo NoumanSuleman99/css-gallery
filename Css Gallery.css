@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+body{
+    background: black;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 13px;
+}
+
+.gallery img{
+    width: 100%;
+    height: 98%;
+    opacity: 0.5;
+}
+
+.gallery img:hover{
+    opacity: 1.0;
+}
